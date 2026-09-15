@@ -17,7 +17,7 @@ It is read by strangers, and its laws follow from that.
   owned upstream and mirrored here byte for byte; edit them upstream,
   never here.
 - **Product names are the codenames** where the code needs one (work,
-  pigeon, studio); the docs speak the shipped names (Ideas, Done, PITO).
+  pigeon, studio); the docs speak the shipped names (Paper, Done, PITO).
 
 # The local gate
 

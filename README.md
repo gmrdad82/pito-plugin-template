@@ -1,6 +1,6 @@
 # pito-plugin-template
 
-Start here to build a plugin or a theme for the PITO desks: Ideas, Done
+Start here to build a plugin or a theme for the PITO desks: Paper, Done
 and PITO. A plugin is sandboxed WebAssembly (`wasm32-wasip2`) against the
 `pito:host` world plus one world per desk; a theme is a palette-tokens
 file and no code. A desk installs either from any public GitHub
