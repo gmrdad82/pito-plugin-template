@@ -21,12 +21,12 @@ jobs:
         run: |
           set -uo pipefail
           if grep -rnIE '(^|[^a-z])/home/|~/[A-Za-z]|\.local/share|localhost:[0-9]+|-dev\.[a-z]+\.[a-z]+' \
-              --exclude-dir=.git --exclude-dir=target --exclude=validate.yml .; then
+              --exclude=.git --exclude-dir=.git --exclude-dir=target --exclude=validate.yml .; then
             echo "::error::A local path, a private tool or a dev hostname reached a public file (shown above)."
             exit 1
           fi
           if grep -rniE '\bitem [0-9]+\b|\b(dev[0-9]+|qa[0-9]+|copy[0-9]+|designer[0-9]+|reviewer[0-9]+|team-lead)\b' \
-              --exclude-dir=.git --exclude-dir=target --exclude=validate.yml .; then
+              --exclude=.git --exclude-dir=.git --exclude-dir=target --exclude=validate.yml .; then
             echo "::error::An agent name or an internal item number reached a public file (shown above)."
             exit 1
           fi

@@ -1,0 +1,12 @@
+# This manifest builds the root plugin as a WebAssembly component guest.
+[package]
+name = "pito-plugin-template"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wit-bindgen = "0.62.0"

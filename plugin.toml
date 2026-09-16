@@ -1,0 +1,8 @@
+# This manifest declares the example plugin to a PITO desk.
+id = "example-plugin"
+name = "Example plugin"
+version = "0.1.0"
+host = "work"
+host_api = "0.1.0"
+capabilities = ["core:read"]
+slots = ["panel"]
