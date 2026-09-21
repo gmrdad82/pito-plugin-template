@@ -18,7 +18,7 @@ jobs:
       - name: Build the plugin
         run: cargo build --release --target wasm32-wasip2
       - name: Stage the plugin artifact
-        run: cp target/wasm32-wasip2/release/pito_plugin_template.wasm plugin.wasm
+        run: cp target/wasm32-wasip2/release/*.wasm plugin.wasm
       - name: Record the artifact hash
         run: sha256sum plugin.wasm > SHA256SUMS
       - name: Publish the release

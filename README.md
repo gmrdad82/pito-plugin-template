@@ -19,6 +19,6 @@ installs the same way.
 cargo build --release --target wasm32-wasip2
 ```
 
-The placeholder artifact is written to
-`target/wasm32-wasip2/release/pito_plugin_template.wasm`. It keeps the
-template buildable until the host's WIT worlds are mirrored into `wit/`.
+The placeholder artifact is the `.wasm` named after your crate under
+`target/wasm32-wasip2/release/`. It keeps the template buildable until
+the host's WIT worlds are mirrored into `wit/`.
